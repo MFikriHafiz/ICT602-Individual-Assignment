@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:text="Select Month:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Spinner
+        android:id="@+id/spinnerMonth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:text="Enter Electricity Unit (kWh):"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/editUnit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="e.g. 350"/>
+
+    <TextView
+        android:text="Rebate Percentage (0% - 5%):"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"/>
+
+    <SeekBar
+        android:id="@+id/seekRebate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="5"/>
+
+    <TextView
+        android:id="@+id/txtRebateValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rebate: 0%"
+        android:layout_marginTop="4dp"/>
+
+    <Button
+        android:id="@+id/btnCalculate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculate"
+        android:layout_marginTop="16dp"/>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_weight="1"/>
+
+    <!-- ✅ New Delete All Button -->
+    <Button
+        android:id="@+id/btnDeleteAll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delete All"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#D32F2F"
+        android:textColor="#FFFFFF"/>
+
+</LinearLayout>
