@@ -163,4 +163,19 @@
 
         </LinearLayout>
     </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:textAllCaps="false"
+        android:textSize="17sp"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        android:iconTint="@android:color/white"
+        style="@style/Widget.MaterialComponents.Button"
+        />
 </LinearLayout>

@@ -1,6 +1,7 @@
 package com.example.electricitybillestimator;
 
 import android.os.Bundle;
+import android.widget.Button;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -20,6 +21,9 @@ public class DetailActivity extends AppCompatActivity {
         txtDetailTotal = findViewById(R.id.txtDetailTotal);
         txtDetailRebate = findViewById(R.id.txtDetailRebate);
         txtDetailFinal = findViewById(R.id.txtDetailFinal);
+
+        Button btnBack = findViewById(R.id.btnBack);
+        btnBack.setOnClickListener(v -> finish());
 
         Bill bill = (Bill) getIntent().getSerializableExtra("bill");
 
